@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+</head>
+<style type="text/css">
+<!--
+#face_check_table img{
+    width: 64px;
+}
+#face_check_table .honnin{
+    background-color: #ff8888
+}
+-->
+</style>
+<body>
+    <table id="face_check_table>
+    <tbody>
+        {% for d in data %}
+        <tr class="{{d.css_class}}"
+            <td>
+                {{d.filename}}
+            </td>
+            <td>
+            {{d.sim}}
+            </td>
+            <td>
+            <img src="data:image/jpeg;base64,{{d.img}}">
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    </div>
+</body>
+</html>
